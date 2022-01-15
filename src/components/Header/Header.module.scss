@@ -1,0 +1,33 @@
+@import "src/styles/scss/variables";
+@import "src/styles/scss/mixins";
+
+
+.headerContainer {
+  height: 150px;
+
+  .headerBlock {
+    background: $bgColorSecond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container();
+
+    .headerBlockWrapper {
+      display: flex;
+      cursor: pointer;
+
+      .headerBlockWrapper_imageContainer {
+        margin-right: 15px;
+      }
+
+      .headerBlockWrapper_title {
+        @include title(800px, 24px, 29px)
+      }
+
+      .headerBlockWrapper_text {
+        @include text(16px, 19px, #7B7B7B);
+        width: 285px;
+      }
+    }
+  }
+}

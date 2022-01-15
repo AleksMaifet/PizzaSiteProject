@@ -1,0 +1,25 @@
+@import 'src/styles/scss/mixins';
+
+.bodyRecipesButtonContainer {
+  width: 955px;
+  display: flex;
+  justify-content: space-between;
+
+  .bodyRecipesButton {
+    @include recipuesButton(#F9F9F9);
+    @include text(16px, 19px, #2C2C2C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bodyRecipesButtonActive {
+    @include recipuesButton(#282828);
+    @include text(16px, 19px, #FFFFFF);
+    @include flexCartContainer();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

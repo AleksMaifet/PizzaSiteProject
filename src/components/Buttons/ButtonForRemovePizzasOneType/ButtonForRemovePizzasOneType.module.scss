@@ -1,0 +1,28 @@
+@import 'src/styles/scss/mixins';
+@import "src/styles/scss/variables";
+
+.buttonWrapper {
+  width: 32px;
+  height: 32px;
+  background: $primaryColor;
+  border: 2px solid #D7D7D7;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $textColor;
+    transition: 0.3s, all;
+
+    .buttonWrapperCross {
+      fill: $primaryColor;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  .buttonWrapperCross {
+    fill: #D7D7D7;
+  }
+}

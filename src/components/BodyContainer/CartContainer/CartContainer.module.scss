@@ -1,0 +1,66 @@
+@import "src/styles/scss/variables";
+@import "src/styles/scss/mixins";
+
+
+.cartContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgColorSecond;
+  @include container();
+
+  .cartContainerWrapper {
+    width: 800px;
+
+    .cartContainerTextBlock {
+      @include flexCartContainer();
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      @include flexCartContainer();
+
+      .cartContainerTitle {
+        @include title(bold, 32px, 39px);
+        display: flex;
+        align-items: center;
+
+        .cartContainerImage {
+          width: 29px;
+          height: 29px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .pizzaSumContainer {
+      @include flexCartContainer();
+      margin-bottom: 30px;
+
+      .pizzaSumContainerTotalNumber {
+        @include text(22px, 27px, $textColor);
+        font-weight: normal;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .pizzaSumContainerTotalPrice {
+        @include text(22px, 27px, $textColor);
+        font-weight: normal;
+
+        span {
+          font-weight: bold;
+          color: #FE5F1E;
+        }
+      }
+    }
+
+    .pizzaButtonContainer {
+      @include flexCartContainer();
+    }
+  }
+}
+

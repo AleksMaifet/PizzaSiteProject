@@ -1,0 +1,60 @@
+@import "src/styles/scss/variables";
+@import "src/styles/scss/mixins";
+
+.cartEmptyContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include container();
+  background-color: $primaryColor;
+
+  .cartEmptyContainerWrapper {
+    text-align: center;
+
+    .cartEmptyTextContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .cartEmptyTitle {
+        @include title(bold, 32px, 39px);
+      }
+
+      .cartEmptyText {
+        @include text(18px, 145%, #777777);
+        width: 547px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .cartEmptyImageContainer {
+      margin: 75px 0 47px;
+
+      .imageWrapper {
+        @include imageWrapper(300px, 250px);
+      }
+    }
+
+    button {
+      width: 210px;
+      height: 46px;
+      background: #282828;
+      border-radius: 30px;
+      border: none;
+      @include text(16px, 19px, $bgColorSecond);
+
+      &:hover {
+        opacity: 0.95;
+        transition: 0.3s, all;
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+}
+

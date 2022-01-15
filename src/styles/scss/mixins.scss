@@ -1,0 +1,68 @@
+@import 'variables';
+
+@mixin container() {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin text($fontSize,$lineHeight,$textColor) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: 0.01em;
+  color: $textColor;
+  font-weight: bold;
+}
+
+@mixin title($fontWeight,$fontSize,$lineHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+  text-transform: uppercase;
+}
+
+@mixin imageWrapper($width,$height) {
+  width: $width;
+  height: $height;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@mixin flexCartContainer() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin recipuesButton($bgColor) {
+  height: 45px;
+  width: 155px;
+  border-radius: 30px;
+  background-color: $bgColor;
+  border: none;
+  transition: 0.3s all;
+}
+
+@mixin modal($opacity,$pointer) {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: $opacity;
+  pointer-events: $pointer;
+  transition: 0.5s;
+}
+
+@mixin modal_Container($scale) {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale($scale);
+}

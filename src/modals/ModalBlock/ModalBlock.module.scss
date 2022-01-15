@@ -1,0 +1,21 @@
+@import "src/styles/scss/variables";
+@import 'src/styles/scss/mixins';
+
+.buttonContainerModalBlock {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .buttonContainerModalBlockTitle {
+    @include text(22px, 27px, $textColor);
+  }
+
+  .buttonContainerWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

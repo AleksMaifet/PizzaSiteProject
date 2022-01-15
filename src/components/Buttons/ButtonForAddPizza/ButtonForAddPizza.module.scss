@@ -1,0 +1,43 @@
+@import 'src/styles/scss/mixins';
+@import "src/styles/scss/variables";
+
+.addPizzaButton {
+  width: 155px;
+  height: 40px;
+  background: $bgColorSecond;
+  border: 1px solid #EB5A1E;
+  box-sizing: border-box;
+  border-radius: 30px;
+  @include text(16px, 19px, #EB5A1E);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #EB5A1E;
+    color: $bgColorSecond;
+    transition: 0.3s, all;
+
+    .addPizzaSpanCount {
+      color: #FE5F1E;
+      background-color: $bgColorSecond;
+    }
+  }
+
+  &:active {
+    transition: 0.3s, all;
+    transform: translateY(1px);
+  }
+
+  .addPizzaSpanCount {
+    width: 22px;
+    height: 22px;
+    background: #EB5A1E;
+    border-radius: 50%;
+    color: $bgColorSecond;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

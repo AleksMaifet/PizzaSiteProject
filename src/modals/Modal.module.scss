@@ -1,0 +1,23 @@
+@import "src/styles/scss/variables";
+@import "src/styles/scss/mixins";
+
+.modal {
+  @include modal(0, none);
+
+  .modal_Content {
+    @include modal_Container(0.5);
+    transition: 0.4s all;
+
+  }
+}
+
+.modal_active {
+  @include modal(1, all);
+
+  .modal_Content_active {
+    @include modal_Container(1);
+    transform: scale(1);
+
+  }
+}
+

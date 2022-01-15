@@ -1,0 +1,22 @@
+.buttonWrapper {
+  width: 150px;
+  height: 40px;
+  background: #FE5F1E;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  opacity: 0.9;
+
+  &:hover {
+    transition: 0.3s, all;
+    opacity: 1;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

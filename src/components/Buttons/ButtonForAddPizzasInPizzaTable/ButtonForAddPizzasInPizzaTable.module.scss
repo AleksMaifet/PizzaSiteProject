@@ -1,0 +1,35 @@
+@import 'src/styles/scss/mixins';
+@import "src/styles/scss/variables";
+
+.buttonWrapper {
+  width: 32px;
+  height: 32px;
+  background: $primaryColor;
+  border: 2px solid #FE5F1E;
+  color: #FE5F1E;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  .buttonWrapperBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      fill: #FE5F1E;
+    }
+  }
+
+  &:hover {
+    background-color: #FE5F1E;
+
+    .logo {
+      fill: $primaryColor;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

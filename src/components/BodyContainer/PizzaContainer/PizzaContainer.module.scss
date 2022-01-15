@@ -1,0 +1,41 @@
+@import 'src/styles/scss/mixins';
+@import 'src/styles/scss/variables';
+
+
+.pizzaContainer {
+  width: 290px;
+  height: 430px;
+  margin: 25px;
+
+  .pizzaImageContainer {
+    @include imageWrapper(260px, 260px)
+  }
+
+  .pizzaBodyWrapper {
+    width: 100%;
+
+    .pizzaTitle {
+      @include title(800px, 17px, 24px,);
+      text-align: center;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pizzaMode {
+      margin: 24px 0;
+    }
+
+    .pizzaFooterContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .pizzaPrice {
+        @include text(22px, 27px, $textColor);
+        font-weight: 700;
+      }
+    }
+  }
+}

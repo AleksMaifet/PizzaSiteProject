@@ -1,0 +1,46 @@
+@import "src/styles/scss/variables";
+@import "src/styles/scss/mixins";
+
+
+.pizzaTableContainer {
+  @include flexCartContainer();
+  margin: 60px 0;
+  align-items: center;
+
+  .pizzaTableContainerWrapper {
+    display: flex;
+    width: 420px;
+
+    .pizzaTableImageContainer {
+      width: 80px;
+      height: 80px;
+    }
+
+    .pizzaTableTitleContainer {
+      display: flex;
+      align-items: center;
+
+      .pizzaTableTitle {
+        @include title(bold, 20px, 27px);
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .pizzaTableContainerButtonWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 115px;
+  }
+
+  .pizzaTableCount {
+    @include title(bold, 20px, 27px);
+    margin: 0 12px;
+  }
+
+  .pizzaTableCash {
+    @include title(bold, 20px, 27px);
+    width: 75px;
+  }
+}

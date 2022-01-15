@@ -1,0 +1,56 @@
+@import 'src/styles/scss/mixins';
+
+
+.bodyContainerSortMenuLogo {
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.bodyContainerSortMenuLogoActive {
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+  transform: scaleY(-1);
+}
+
+.bodyContainerSort {
+  @include title(bold, 14px, 17px);
+}
+
+.sortModuleBlockSpanMode {
+  border-bottom: 1px dashed #FE5F1E;
+  @include title(bold, 14px, 17px);
+  color: #FE5F1E;
+}
+
+.sortModuleBlock {
+  height: 130px;
+  width: 136px;
+  position: absolute;
+  top: 140%;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 3%);
+  border-radius: 10px;
+  @include text(18px, 17px, #000000);
+  text-align: center;
+
+  .li {
+    cursor: pointer;
+    padding: 10px;
+    @include text(14px, 17px, #000000);
+
+    &:hover {
+      background: rgba(254, 95, 30, 0.05);
+    }
+  }
+
+  .liActive {
+    cursor: pointer;
+    padding: 10px;
+    @include text(14px, 17px, #FE5F1E);
+    background: rgba(254, 95, 30, 0.05);
+    text-align: center;
+  }
+}

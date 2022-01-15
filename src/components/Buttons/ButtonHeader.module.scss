@@ -1,0 +1,50 @@
+@import 'src/styles/scss/mixins';
+@import "src/styles/scss/variables";
+
+.buttonHeaderContainer {
+  width: 190px;
+  height: 50px;
+  background: #FE5F1E;
+  border-radius: 30px;
+  border: none;
+  @include text(15px, 19px, $bgColorSecond);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .buttonHeaderContainerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .buttonHeaderContainerImageWrapper {
+      display: flex;
+      position: relative;
+
+      .buttonHeaderContainerImage {
+        @include imageWrapper(24px, 24px);
+      }
+
+      .buttonHeaderContainerCount {
+        position: absolute;
+        top: -5px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        background: $bgColorSecond;
+        border-radius: 50%;
+        color: #EB5A1E;
+        margin-left: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transition: 0.3s all;
+  }
+}

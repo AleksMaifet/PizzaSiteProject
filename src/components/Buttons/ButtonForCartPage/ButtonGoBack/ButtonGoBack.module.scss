@@ -1,0 +1,21 @@
+@import "src/styles/scss/variables";
+@import 'src/styles/scss/mixins';
+
+.buttonContainer {
+  width: 211px;
+  height: 55px;
+  border: 1px solid #D3D3D3;
+  border-radius: 30px;
+  background: $bgColorSecond;
+  @include text(16px, 19px, #CACACA);
+
+  &:hover {
+    transition: 0.3s, all;
+    background-color: $textColor;
+    color: $bgColorSecond;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
