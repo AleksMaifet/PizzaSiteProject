@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/PizzaSiteProject/static/css/main.b4f8042d.css",
+    "main.js": "/PizzaSiteProject/static/js/main.21aee1d6.js",
+    "static/media/SeventhPizza.svg": "/PizzaSiteProject/static/media/SeventhPizza.94345d8cd67b55d64ce3a6ad01e95201.svg",
+    "static/media/ThiedPizza.svg": "/PizzaSiteProject/static/media/ThiedPizza.9bc082a1bb7ae9c50580d56a37c1ce79.svg",
+    "static/media/EighthPizza.svg": "/PizzaSiteProject/static/media/EighthPizza.69491eb3af392d8623e2538a9d17c5f2.svg",
+    "static/media/FourthPizza.svg": "/PizzaSiteProject/static/media/FourthPizza.b8a675d961ad333317f244c988c4a33f.svg",
+    "static/media/FifthPizza.svg": "/PizzaSiteProject/static/media/FifthPizza.09fd8433124b922cbe283c7b9bcc6891.svg",
+    "static/media/FirstPizza.svg": "/PizzaSiteProject/static/media/FirstPizza.9c79b52d6bc827ba325b2d398e7ae483.svg",
+    "static/media/SecondPizza.svg": "/PizzaSiteProject/static/media/SecondPizza.87e927486bd27d5482ae70e3ab829e6b.svg",
+    "static/media/SixthPizza.svg": "/PizzaSiteProject/static/media/SixthPizza.4dff3f021d569369559830d4c2130f1b.svg",
+    "static/media/Logo.svg": "/PizzaSiteProject/static/media/Logo.cf6d3b6be905864076d6bda85444ef62.svg",
+    "static/media/CartImage.svg": "/PizzaSiteProject/static/media/CartImage.903eff3144cd70abf2614eec897d6974.svg",
+    "static/media/IconCartFirst.svg": "/PizzaSiteProject/static/media/IconCartFirst.dcd5168086a25b3307ba9f5524ca6e70.svg",
+    "static/media/cartWhiteColor.svg": "/PizzaSiteProject/static/media/cartWhiteColor.d05720f2b474db2145233cd2ce1d4e91.svg",
+    "static/media/IconCartSecond.svg": "/PizzaSiteProject/static/media/IconCartSecond.ceafcffb34cece0b1462c3505b170d88.svg",
+    "index.html": "/PizzaSiteProject/index.html",
+    "static/media/cross.svg": "/PizzaSiteProject/static/media/cross.7c385f58bf83019076fb070692786ae2.svg",
+    "static/media/plus.svg": "/PizzaSiteProject/static/media/plus.27366af2eda7e93dd2b35b1049415c0f.svg",
+    "static/media/Vector.svg": "/PizzaSiteProject/static/media/Vector.8a732a7211d0fa00bfd63712369e29cc.svg",
+    "static/media/minus.svg": "/PizzaSiteProject/static/media/minus.ab2ca8be8dc4caee66a10f08316f6679.svg",
+    "main.b4f8042d.css.map": "/PizzaSiteProject/static/css/main.b4f8042d.css.map",
+    "main.21aee1d6.js.map": "/PizzaSiteProject/static/js/main.21aee1d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4f8042d.css",
+    "static/js/main.21aee1d6.js"
+  ]
+}
