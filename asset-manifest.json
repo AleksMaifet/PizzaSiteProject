@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PizzaSiteProject/static/css/main.b4f8042d.css",
-    "main.js": "/PizzaSiteProject/static/js/main.f77d5f03.js",
+    "main.css": "/PizzaSiteProject/static/css/main.07d42400.css",
+    "main.js": "/PizzaSiteProject/static/js/main.1e53cdfa.js",
     "static/media/SeventhPizza.svg": "/PizzaSiteProject/static/media/SeventhPizza.94345d8cd67b55d64ce3a6ad01e95201.svg",
     "static/media/ThiedPizza.svg": "/PizzaSiteProject/static/media/ThiedPizza.9bc082a1bb7ae9c50580d56a37c1ce79.svg",
     "static/media/EighthPizza.svg": "/PizzaSiteProject/static/media/EighthPizza.69491eb3af392d8623e2538a9d17c5f2.svg",
@@ -20,11 +20,11 @@
     "static/media/plus.svg": "/PizzaSiteProject/static/media/plus.27366af2eda7e93dd2b35b1049415c0f.svg",
     "static/media/Vector.svg": "/PizzaSiteProject/static/media/Vector.8a732a7211d0fa00bfd63712369e29cc.svg",
     "static/media/minus.svg": "/PizzaSiteProject/static/media/minus.ab2ca8be8dc4caee66a10f08316f6679.svg",
-    "main.b4f8042d.css.map": "/PizzaSiteProject/static/css/main.b4f8042d.css.map",
-    "main.f77d5f03.js.map": "/PizzaSiteProject/static/js/main.f77d5f03.js.map"
+    "main.07d42400.css.map": "/PizzaSiteProject/static/css/main.07d42400.css.map",
+    "main.1e53cdfa.js.map": "/PizzaSiteProject/static/js/main.1e53cdfa.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4f8042d.css",
-    "static/js/main.f77d5f03.js"
+    "static/css/main.07d42400.css",
+    "static/js/main.1e53cdfa.js"
   ]
 }
