@@ -7,7 +7,7 @@ import style from './SortModule.module.scss';
 import { SORT_MENU } from 'components/BodyContainer/BodyContainer';
 import imageVector from 'images/utils/Vector.svg';
 import { sortPizzasAC } from 'store/actionCreators';
-import { sortPizzasALLAC } from 'store/actionCreators/actionCreators';
+import { setPizzasStateTC } from 'store/thunkCreators';
 import { ReturnComponentType } from 'types';
 
 export const PRICE_SORT = 'цене';
@@ -32,7 +32,7 @@ export const SortModule = (): ReturnComponentType => {
 
   const changeSortMenu = (sort: string): void => {
     if (sort === POPULAR_SORT) {
-      dispatch(sortPizzasALLAC());
+      dispatch(setPizzasStateTC());
       helperChangeSortMenu(sort);
       return;
     }

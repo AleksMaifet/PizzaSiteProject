@@ -1,9 +1,10 @@
 import { PRICE_SORT } from 'components/SortModule/SortModule';
-import { ALL_PIZZA, PIZZA_ARRAY } from 'PIZZA/PIZZA';
+import { ALL_PIZZA } from 'PIZZA/PIZZA';
+import { PizzaType } from 'PIZZA/types';
 import { PizzaReducerHandleTypes, PizzaStateType } from 'store/types';
 
 export const pizzaState = {
-  PIZZA_ARRAY,
+  pizzas: [] as PizzaType,
   statusPizza: ALL_PIZZA,
 };
 
@@ -15,23 +16,24 @@ export const pizzaReducer = (
   action: PizzaReducerHandleTypes,
 ): PizzaStateType => {
   switch (action.type) {
+    case 'SET-PIZZAS-STATE': {
+      return {
+        ...state,
+        pizzas: action.pizzasState,
+      };
+    }
     case 'CHANGE-PIZZA':
       return {
         ...state,
         ...action.payload,
       };
-    case 'SORT-PIZZA-ALL':
-      return {
-        ...state,
-        PIZZA_ARRAY,
-      };
     case 'SORT-PIZZA':
       return {
         ...state,
-        PIZZA_ARRAY:
+        pizzas:
           action.payload === PRICE_SORT
-            ? [...state.PIZZA_ARRAY].sort((a, b) => b.price - a.price)
-            : [...state.PIZZA_ARRAY].sort((a, b) =>
+            ? [...state.pizzas].sort((a, b) => b.price - a.price)
+            : [...state.pizzas].sort((a, b) =>
                 a.name > b.name ? SORT_INDEX_PLUS : SORT_INDEX_MINUS,
               ),
       };

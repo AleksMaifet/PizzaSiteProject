@@ -5,10 +5,10 @@ import {
   removePizzaAC,
   removePizzasCartAC,
   removeTotalPizzasOneTypeAC,
+  setPizzasStateAC,
   sortPizzasAC,
   totalCountOfPizzasAC,
 } from 'store/actionCreators';
-import { sortPizzasALLAC } from 'store/actionCreators/actionCreators';
 import { initState } from 'store/reducers/appReducer';
 import { pizzaState } from 'store/reducers/pizzaReducer';
 
@@ -39,7 +39,7 @@ export type PricePizzaType = {
 export type PizzaReducerHandleTypes =
   | ReturnType<typeof changePizzaAC>
   | ReturnType<typeof sortPizzasAC>
-  | ReturnType<typeof sortPizzasALLAC>;
+  | ReturnType<typeof setPizzasStateAC>;
 
 export type PizzaCardReducerHandleTypes =
   | ReturnType<typeof addNewPizzaAC>

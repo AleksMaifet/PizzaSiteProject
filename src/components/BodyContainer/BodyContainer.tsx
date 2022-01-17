@@ -7,8 +7,7 @@ import style from './BodyContainer.module.scss';
 import { ButtonRecipesPizzaBlock, PizzaContainer } from 'components';
 import { SortModule } from 'components/SortModule/SortModule';
 import { ALL_PIZZA } from 'PIZZA/PIZZA';
-import { selectorGetPizzas } from 'store/selectors/selectorGetPizzas';
-import { selectorSortPizzas } from 'store/selectors/selectorSortPizzas';
+import { selectorGetPizzas, selectorSortPizzas } from 'store/selectors';
 import { ReturnComponentType } from 'types';
 
 export const SORT_MENU = 'Сортировка по: ';

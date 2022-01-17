@@ -1,7 +1,7 @@
 import React from 'react';
 
 import 'index.scss';
-
+import './firebase/firebase';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';

@@ -4,7 +4,7 @@
 
 .pizzaContainer {
   width: 290px;
-  height: 430px;
+  height: 490px;
   margin: 25px;
 
   .pizzaImageContainer {
@@ -25,11 +25,13 @@
 
     .pizzaMode {
       margin: 24px 0;
+      display: flex;
+      justify-content: center;
     }
 
     .pizzaFooterContainer {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 
       .pizzaPrice {

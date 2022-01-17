@@ -1,4 +1,5 @@
-import { combineReducers, createStore } from 'redux';
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunk from 'redux-thunk';
 
 import { loadState, saveState } from 'service/localStorage';
 import { appReducer } from 'store/reducers/appReducer';
@@ -13,7 +14,7 @@ const reducers = combineReducers({
 
 const persistedState = loadState();
 
-export const store = createStore(reducers, persistedState);
+export const store = createStore(reducers, persistedState, applyMiddleware(thunk));
 
 export type AppStoreType = ReturnType<typeof reducers>;
 

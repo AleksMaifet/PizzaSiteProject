@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import style from './Header.module.scss';
@@ -7,17 +8,24 @@ import style from './Header.module.scss';
 import { ButtonHeader } from 'components';
 import logoImage from 'images/Logo/Logo.svg';
 import { PATH } from 'Routes/Route';
+import { setPizzasStateTC } from 'store/thunkCreators';
 import { ReturnComponentType } from 'types';
 
 export const LOGO_TITLE_NAME = 'REACT PIZZA';
 export const PRE_TITLE_NAME = 'самая вкусная пицца во вселенной';
 
 export const Header = (): ReturnComponentType => {
+  const dispatch = useDispatch();
+
   const navigate = useNavigate();
 
   const goToHomePageOnclickHandle = (): void => {
     navigate(PATH.HOME_PAGE);
   };
+
+  useEffect(() => {
+    dispatch(setPizzasStateTC());
+  }, [dispatch]);
 
   return (
     <div className={style.headerContainer}>

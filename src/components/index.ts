@@ -13,3 +13,5 @@ export { ButtonForAddPizzasInPizzaTable } from './Buttons/ButtonForAddPizzasInPi
 export { ButtonForRemovePizzasOneType } from './Buttons/ButtonForRemovePizzasOneType/ButtonForRemovePizzasOneType';
 export { CommonButton } from './Buttons/CommonButton/CommonButton';
 export { RemoveCartBlock } from './BodyContainer/CartContainer/RemoveCartBlock/RemoveCartBlock';
+export { ChangeMode } from 'components/BodyContainer/PizzaContainer/ChangeMode/ChangeMode';
+export { ButtonForChangeModeComponent } from './Buttons/ButtonForChangeModeComponent/ButtonForChangeModeComponent';

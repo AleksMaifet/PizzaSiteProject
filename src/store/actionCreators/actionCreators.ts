@@ -1,5 +1,11 @@
+import { PizzaType } from 'PIZZA/types';
 import { PricePizzaType } from 'store/types';
 
+export const setPizzasStateAC = (pizzasState: PizzaType) =>
+  ({
+    type: 'SET-PIZZAS-STATE',
+    pizzasState,
+  } as const);
 export const changePizzaAC = (statusPizza: string) =>
   ({
     type: 'CHANGE-PIZZA',
@@ -30,10 +36,6 @@ export const sortPizzasAC = (sort: string) =>
   ({
     type: 'SORT-PIZZA',
     payload: sort,
-  } as const);
-export const sortPizzasALLAC = () =>
-  ({
-    type: 'SORT-PIZZA-ALL',
   } as const);
 export const removePizzaAC = (id: number) =>
   ({
